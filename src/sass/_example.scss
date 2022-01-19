@@ -1,13 +1,14 @@
 a {
   text-decoration: none;
-  text-decoration-color: black;
+  color: black;
+  margin: 0;
 }
 
 .search-form {
   height: 60px;
   background-color: #013cfc;
   display: flex;
- justify-content: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -23,7 +24,7 @@ a {
 }
 
 .gallery {
-    text-decoration: none;
+  text-decoration: none;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -31,7 +32,6 @@ a {
   justify-content: center;
 
   .photo-card {
-    // border: 1px solid black;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
     margin: 5px;
     width: 23%;
@@ -42,33 +42,26 @@ a {
 
     img {
       width: 100%;
-      height: 70%;
+      height: 75%;
       background-size: cover;
     }
   }
 
   .photo-card:hover,
   .photo-card:focus {
-        box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
   }
 
   .info {
+    // font-size: 12px;
     width: 100%;
     display: flex;
-    justify-content: center;
-      text-decoration: none;
+    justify-content: space-evenly;
 
     .info-item {
-      width: 25%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-
-      b {
-        display: flex;
-        justify-content: center;
-      }
     }
   }
 }
